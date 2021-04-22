@@ -1,0 +1,1130 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11F769D5EF7756FFD556FE91363E35AF /* CDMarkdownCommonElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7FEC2431CCAAF13753562747C7FA9 /* CDMarkdownCommonElement.swift */; };
+		1A2FF58786BBDD2E38107C2FEE9FF9BD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DE96DC511BD1CE643E8E9A8CE72374 /* SystemConfiguration.framework */; };
+		1B5B16AAD4CC1903DFF4413DB281E78F /* CDMarkdownList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AF3F892C18CDB2818F1DBE7AD69004 /* CDMarkdownList.swift */; };
+		1B903539959B735C37C50C377C3CB1A5 /* CDMarkdownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF656B1E927EA713A465BD414235465 /* CDMarkdownLabel.swift */; };
+		205EC67B3B178C83638B9C8851168E45 /* CDMarkdownLinkElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E53893F371DF43E4E2B1D2E7656ADB /* CDMarkdownLinkElement.swift */; };
+		21690F5E60F2BB5C41E8FDBACA083624 /* CDMarkdownSyntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795B05908D5DEABF6DFE87C519BFAA0 /* CDMarkdownSyntax.swift */; };
+		23021E8E674F6637677F889ECD5825A4 /* CDFont+CDMarkdownKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584786359E40E0B519C58EF9EE00C66D /* CDFont+CDMarkdownKit.swift */; };
+		266375ABE9560639B88478F66B969594 /* CDMarkdownEscaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1557CC97911A3A45F5C105571794E30F /* CDMarkdownEscaping.swift */; };
+		28FEA803629B45802A3B388F89AD4489 /* Dictionary+CDMarkdownKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2CB5F30ED1618FC27E141E9D98CE01 /* Dictionary+CDMarkdownKit.swift */; };
+		3AEAC42F1DB4F027913B43FB0457B6BB /* CDMarkdownUnescaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413EB277B9641649AC32191FF15BB42A /* CDMarkdownUnescaping.swift */; };
+		3D86B7607A5EFC1A247A4860D89D183F /* Pods-JMMarkdownKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F221D1602B9D88BC59FB99C2B6505B3 /* Pods-JMMarkdownKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4043AA38EDC603195C295E1B9B14E905 /* NSAttributedString+CDMarkdownKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72570BA06298D258CF27D560D89BAB89 /* NSAttributedString+CDMarkdownKit.swift */; };
+		45FDD58C32D06FF90640AD63FE99688E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30453446C5310EA114B978294858C9A5 /* Foundation.framework */; };
+		47890F507F1F8C1E9C4EF75303EF1D78 /* NSMutableAttributedString+CDMarkdownKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEE493D90897D53B88A71566B56E24 /* NSMutableAttributedString+CDMarkdownKit.swift */; };
+		496F1AD644CECAD1D7E3802F38876DF8 /* Pods-JMMarkdownKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BACDD6C14752806AEBECFF8CB532D58C /* Pods-JMMarkdownKit-dummy.m */; };
+		4A9FEF723D90B01AA534659AE6B71891 /* String+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C0167EE3ED323506EED9643282E4D /* String+Util.swift */; };
+		4B0219AFD08FAF5ACAB997519A2A1AAA /* CDColor+CDMarkdownKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CA6C3A660431EF136DD7747632FB6 /* CDColor+CDMarkdownKit.swift */; };
+		4F8C4960DF9B79775D1EBADB90C75965 /* TypedTextAttributes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A6A021F443FEE45FAC091A3FAF4246 /* TypedTextAttributes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		501BE5DCD470895A9FE575A149FB1712 /* CDImage+CDMarkdownKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287054AAA66F47B4556BE2BA78D4A894 /* CDImage+CDMarkdownKit.swift */; };
+		51E6DBC83CA3CF75904D45A41601655E /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E07478C16F108A1DA201B158FFF02B /* CGFloatExtensions.swift */; };
+		575B1DF0B5A69B9DE2ECA1BC1CBC4DB4 /* TypedTextAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = EE36BF9E608A6DEB0BC28990E49A2281 /* TypedTextAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CC4EB40DEE305A56239BE091BC1F2EE /* CDMarkdownLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69284A1DA5FBF53EB1998D041078A879 /* CDMarkdownLayoutManager.swift */; };
+		5CE239AAA56832708EDDA0CFC4B32ED4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30453446C5310EA114B978294858C9A5 /* Foundation.framework */; };
+		5E817DB498E914AC2B10E518DED6CC90 /* CDMarkdownParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823F0A2814A26004B80E0EF5A23D765B /* CDMarkdownParser.swift */; };
+		6296AB3B7F6EB5AFEA32254D3CC915CD /* CDMarkdownCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E213152442B92A1FDF8427F8893E51 /* CDMarkdownCode.swift */; };
+		633D45339F6507AD267ADD58827CC152 /* CDColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B84F89761D68DDF82D656118D91779A /* CDColor.swift */; };
+		6388DD6B3E6D2A390BCBDB37911897DE /* TypedTextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86E93298DCDC4498AFEDF2305180DC /* TypedTextAttributes.swift */; };
+		68D56DB0EA1C1CF7129CF902C653A03E /* CDFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A142E097F2F0BEC2226712970B5150B /* CDFont.swift */; };
+		71E5DBCD87D72B2ED0E66E3AA980E483 /* JMDesignKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C99B146B45487C36BD6CB699CD6F8139 /* JMDesignKit-dummy.m */; };
+		7CD58AC559640E62C69826A4DE0B0E5C /* CDMarkdownKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B911825A01855614117949CC9E0A1D /* CDMarkdownKit-dummy.m */; };
+		7F2B1A4F49B497A946FCF329E2D21205 /* JMDesignKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 89638CB41912D9DA56BE8DBD8929CCA6 /* JMDesignKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F8C944FE909BDFCA4C687DDCF3C86C4 /* CDMarkdownStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FA07AE86E073342A78DAD0D7AC3FF /* CDMarkdownStyle.swift */; };
+		8288CCE3A10FAC9BA5664176A251FD24 /* CGSizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3AD2430C71D598F9477D4F301D144 /* CGSizeExtensions.swift */; };
+		851285C2088A4A191187125C30A44586 /* CDMarkdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA292CC60AC40315EBC5BE54B6A3435C /* CDMarkdownTextView.swift */; };
+		9024059FA7F2608AEEDA9A45B7B1C81D /* NSTextCheckingResult+CDMarkdownKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3FC9B0FE12B07CAFDCA4404700DAF /* NSTextCheckingResult+CDMarkdownKit.swift */; };
+		90D4BBBBBE49F4A53E5EACD15B69A483 /* CDMarkdownCodeEscaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281A043C785C9263B4AB35A57859A932 /* CDMarkdownCodeEscaping.swift */; };
+		98CE5B7A56F35EA647D6E05DB1488137 /* TypedTextAttributes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B65EEE3B30DF4924117DC73F3B3958 /* TypedTextAttributes-dummy.m */; };
+		A53C7A1358A0B7A818DA548E1A2C3313 /* CDMarkdownElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64601BA9EF682F2B183A0D710C14CB69 /* CDMarkdownElement.swift */; };
+		AAB2FB3C3E8D9A802BD65F04C1601336 /* CDMarkdownAutomaticLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C14E5379261BAA2D71A2F45BCC8049 /* CDMarkdownAutomaticLink.swift */; };
+		B3CB22A41A218C029767B74D6A7A04B8 /* CDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45B8C277839A11558FD343F6BB12B98 /* CDImage.swift */; };
+		B69EECCA8ED6A191F3CC9DFDDBDEC0FE /* CDMarkdownBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE243295B32EE2E59A2F0340E230EF7 /* CDMarkdownBold.swift */; };
+		B86476762142A5D90135CAED8152D10A /* CDMarkdownImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7078D7A49766D27A9F639E9F224754C5 /* CDMarkdownImage.swift */; };
+		BBD3B8500DC1B87DB273E064DA7B0C84 /* CDMarkdownKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A66B887A978F91C1523AF191E26BA12B /* CDMarkdownKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9DDA6A35518D6D707DDE9A161509BEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30453446C5310EA114B978294858C9A5 /* Foundation.framework */; };
+		CA9C434BD497860E499F3366F8B4A3B8 /* NSTextStorage+CDMarkdownKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5AE3CFEEEEB15FC780A2B54AF77A03 /* NSTextStorage+CDMarkdownKit.swift */; };
+		CE16A7481F0D8F9F34383F001ACE4ED3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30453446C5310EA114B978294858C9A5 /* Foundation.framework */; };
+		CE2EC0D1DCFC56DF7382DF847F342BDA /* CDAttributedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FA5A9DB69E902F9435E94283FA5A0 /* CDAttributedStringKey.swift */; };
+		DB2EA038FF6FC30C4946B6786CA5E928 /* String+CDMarkdownKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6374A81BD0FDC168B5C0AD33D51C4 /* String+CDMarkdownKit.swift */; };
+		DF656D0D287C56BECB3A813E18A0725C /* CDMarkdownQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C759BE7785FA726D5B062A6747D91F /* CDMarkdownQuote.swift */; };
+		E425708D9CDC897F8F7506700282D5E8 /* CDMarkdownLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E740E37D20E289C710FE9B1B2D3F6C /* CDMarkdownLink.swift */; };
+		EC8CF17C77EABAFC125DD6689484DAF8 /* CDMarkdownHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5E3CF90BD4A2163372EF92C1F7BEB3 /* CDMarkdownHeader.swift */; };
+		F54A4CFFD9C1FFA7DD4F6389E939D328 /* CDMarkdownItalic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B29DB14E88FEFA3A280C9AEDDBCC5 /* CDMarkdownItalic.swift */; };
+		F9427AF06B35A0B21AF05B46C5FE4FD0 /* JMDesignKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF5DC42AF03E39DAD8CE1A30219D9C0 /* JMDesignKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6F1FB738B6FDD322E1EEA131AD9C18 /* CDMarkdownLevelElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC4502958D93492C2FBFC6A60787AD9 /* CDMarkdownLevelElement.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A55966CF9E29B21BC0B474F4A3619CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2E70E01F503FF73C300641039658C86;
+			remoteInfo = TypedTextAttributes;
+		};
+		B725D5A83531D0AE95F8EFBBC2D31BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0C8CCAE1E2F08889F4F1330C88DE8F6;
+			remoteInfo = JMDesignKit;
+		};
+		D82DBC1511B1C09C429CBCFC7B662472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C79925E52776EF02553DA13CC438FD7;
+			remoteInfo = CDMarkdownKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E07478C16F108A1DA201B158FFF02B /* CGFloatExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
+		01C14E5379261BAA2D71A2F45BCC8049 /* CDMarkdownAutomaticLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownAutomaticLink.swift; path = Source/CDMarkdownAutomaticLink.swift; sourceTree = "<group>"; };
+		07D4E73BE2CBE4D3EB364B86442CF6D4 /* JMDesignKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JMDesignKit.release.xcconfig; sourceTree = "<group>"; };
+		0DC6B3CC980C766816FB5249DF2E031A /* TypedTextAttributes-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TypedTextAttributes-Info.plist"; sourceTree = "<group>"; };
+		0FF6714BBB65CFA3119A0293BAA9DE6D /* Pods-JMMarkdownKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMMarkdownKit-Info.plist"; sourceTree = "<group>"; };
+		13B65EEE3B30DF4924117DC73F3B3958 /* TypedTextAttributes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TypedTextAttributes-dummy.m"; sourceTree = "<group>"; };
+		1557CC97911A3A45F5C105571794E30F /* CDMarkdownEscaping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownEscaping.swift; path = Source/CDMarkdownEscaping.swift; sourceTree = "<group>"; };
+		15E53893F371DF43E4E2B1D2E7656ADB /* CDMarkdownLinkElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownLinkElement.swift; path = Source/CDMarkdownLinkElement.swift; sourceTree = "<group>"; };
+		18DE96DC511BD1CE643E8E9A8CE72374 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		1ADAA14F117952881C8F0392B8653596 /* TypedTextAttributes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TypedTextAttributes.release.xcconfig; sourceTree = "<group>"; };
+		1E5E3CF90BD4A2163372EF92C1F7BEB3 /* CDMarkdownHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownHeader.swift; path = Source/CDMarkdownHeader.swift; sourceTree = "<group>"; };
+		1E7F20071E3649A6DB0257D9C147C183 /* Pods-JMMarkdownKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMMarkdownKit.release.xcconfig"; sourceTree = "<group>"; };
+		20E7FEC2431CCAAF13753562747C7FA9 /* CDMarkdownCommonElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownCommonElement.swift; path = Source/CDMarkdownCommonElement.swift; sourceTree = "<group>"; };
+		242A20F9F9C0EABD713B6C4DBF437336 /* JMDesignKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMDesignKit-prefix.pch"; sourceTree = "<group>"; };
+		281A043C785C9263B4AB35A57859A932 /* CDMarkdownCodeEscaping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownCodeEscaping.swift; path = Source/CDMarkdownCodeEscaping.swift; sourceTree = "<group>"; };
+		287054AAA66F47B4556BE2BA78D4A894 /* CDImage+CDMarkdownKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CDImage+CDMarkdownKit.swift"; path = "Source/CDImage+CDMarkdownKit.swift"; sourceTree = "<group>"; };
+		30453446C5310EA114B978294858C9A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35F555434883200D974D1224D212F9C0 /* JMDesignKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JMDesignKit-Info.plist"; sourceTree = "<group>"; };
+		3A1BD968B0049EEDE647BEB5E03BF451 /* TypedTextAttributes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TypedTextAttributes.debug.xcconfig; sourceTree = "<group>"; };
+		3E03E1E8C1DAFDA6186F925D45D333CD /* CDMarkdownKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CDMarkdownKit.modulemap; sourceTree = "<group>"; };
+		413EB277B9641649AC32191FF15BB42A /* CDMarkdownUnescaping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownUnescaping.swift; path = Source/CDMarkdownUnescaping.swift; sourceTree = "<group>"; };
+		4A142E097F2F0BEC2226712970B5150B /* CDFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDFont.swift; path = Source/CDFont.swift; sourceTree = "<group>"; };
+		4B7C0167EE3ED323506EED9643282E4D /* String+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Util.swift"; path = "TypedTextAttributes/String+Util.swift"; sourceTree = "<group>"; };
+		50C7394A125FB6636DD120FFB20C491C /* JMDesignKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JMDesignKit.debug.xcconfig; sourceTree = "<group>"; };
+		5153CE840824841AB8235A5B437060EF /* CDMarkdownKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDMarkdownKit.release.xcconfig; sourceTree = "<group>"; };
+		581CA6C3A660431EF136DD7747632FB6 /* CDColor+CDMarkdownKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CDColor+CDMarkdownKit.swift"; path = "Source/CDColor+CDMarkdownKit.swift"; sourceTree = "<group>"; };
+		584786359E40E0B519C58EF9EE00C66D /* CDFont+CDMarkdownKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CDFont+CDMarkdownKit.swift"; path = "Source/CDFont+CDMarkdownKit.swift"; sourceTree = "<group>"; };
+		5D1B29DB14E88FEFA3A280C9AEDDBCC5 /* CDMarkdownItalic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownItalic.swift; path = Source/CDMarkdownItalic.swift; sourceTree = "<group>"; };
+		625FA07AE86E073342A78DAD0D7AC3FF /* CDMarkdownStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownStyle.swift; path = Source/CDMarkdownStyle.swift; sourceTree = "<group>"; };
+		62A1F1EDC3E7DC592F79D396A7AD546F /* TypedTextAttributes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TypedTextAttributes.framework; path = TypedTextAttributes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64601BA9EF682F2B183A0D710C14CB69 /* CDMarkdownElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownElement.swift; path = Source/CDMarkdownElement.swift; sourceTree = "<group>"; };
+		67927A663B273700134FBA638F6F165B /* CDMarkdownKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CDMarkdownKit.framework; path = CDMarkdownKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F6374A81BD0FDC168B5C0AD33D51C4 /* String+CDMarkdownKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+CDMarkdownKit.swift"; path = "Source/String+CDMarkdownKit.swift"; sourceTree = "<group>"; };
+		69284A1DA5FBF53EB1998D041078A879 /* CDMarkdownLayoutManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownLayoutManager.swift; path = Source/CDMarkdownLayoutManager.swift; sourceTree = "<group>"; };
+		6AC4502958D93492C2FBFC6A60787AD9 /* CDMarkdownLevelElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownLevelElement.swift; path = Source/CDMarkdownLevelElement.swift; sourceTree = "<group>"; };
+		6B86E93298DCDC4498AFEDF2305180DC /* TypedTextAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypedTextAttributes.swift; path = TypedTextAttributes/TypedTextAttributes.swift; sourceTree = "<group>"; };
+		6DF357AC917FF1C8F3693C11CAD58096 /* CDMarkdownKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDMarkdownKit.debug.xcconfig; sourceTree = "<group>"; };
+		6E2CB5F30ED1618FC27E141E9D98CE01 /* Dictionary+CDMarkdownKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+CDMarkdownKit.swift"; path = "Source/Dictionary+CDMarkdownKit.swift"; sourceTree = "<group>"; };
+		7078D7A49766D27A9F639E9F224754C5 /* CDMarkdownImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownImage.swift; path = Source/CDMarkdownImage.swift; sourceTree = "<group>"; };
+		716643D02467614B18D3F94B518AD4F9 /* TypedTextAttributes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TypedTextAttributes-prefix.pch"; sourceTree = "<group>"; };
+		72570BA06298D258CF27D560D89BAB89 /* NSAttributedString+CDMarkdownKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+CDMarkdownKit.swift"; path = "Source/NSAttributedString+CDMarkdownKit.swift"; sourceTree = "<group>"; };
+		7795B05908D5DEABF6DFE87C519BFAA0 /* CDMarkdownSyntax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownSyntax.swift; path = Source/CDMarkdownSyntax.swift; sourceTree = "<group>"; };
+		79B4B06C900839E07E2760F9EA53005E /* Pods-JMMarkdownKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMMarkdownKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		7A5AE3CFEEEEB15FC780A2B54AF77A03 /* NSTextStorage+CDMarkdownKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextStorage+CDMarkdownKit.swift"; path = "Source/NSTextStorage+CDMarkdownKit.swift"; sourceTree = "<group>"; };
+		7CC3AD2430C71D598F9477D4F301D144 /* CGSizeExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGSizeExtensions.swift; sourceTree = "<group>"; };
+		7F221D1602B9D88BC59FB99C2B6505B3 /* Pods-JMMarkdownKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JMMarkdownKit-umbrella.h"; sourceTree = "<group>"; };
+		7FF5DC42AF03E39DAD8CE1A30219D9C0 /* JMDesignKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMDesignKit-umbrella.h"; sourceTree = "<group>"; };
+		7FF656B1E927EA713A465BD414235465 /* CDMarkdownLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownLabel.swift; path = Source/CDMarkdownLabel.swift; sourceTree = "<group>"; };
+		8123507FA85B27B4DAF8E370F60EC31F /* TypedTextAttributes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TypedTextAttributes.modulemap; sourceTree = "<group>"; };
+		823F0A2814A26004B80E0EF5A23D765B /* CDMarkdownParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownParser.swift; path = Source/CDMarkdownParser.swift; sourceTree = "<group>"; };
+		89638CB41912D9DA56BE8DBD8929CCA6 /* JMDesignKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JMDesignKit.h; sourceTree = "<group>"; };
+		8B84F89761D68DDF82D656118D91779A /* CDColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDColor.swift; path = Source/CDColor.swift; sourceTree = "<group>"; };
+		91B1542E8D9391C515EC83D7B5116286 /* JMDesignKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JMDesignKit.modulemap; sourceTree = "<group>"; };
+		95A6A021F443FEE45FAC091A3FAF4246 /* TypedTextAttributes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TypedTextAttributes-umbrella.h"; sourceTree = "<group>"; };
+		98C759BE7785FA726D5B062A6747D91F /* CDMarkdownQuote.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownQuote.swift; path = Source/CDMarkdownQuote.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A20FA5A9DB69E902F9435E94283FA5A0 /* CDAttributedStringKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAttributedStringKey.swift; path = Source/CDAttributedStringKey.swift; sourceTree = "<group>"; };
+		A4253A42618E9BF8C9FB5F9A3938AB9A /* Pods-JMMarkdownKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMMarkdownKit.debug.xcconfig"; sourceTree = "<group>"; };
+		A45B8C277839A11558FD343F6BB12B98 /* CDImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDImage.swift; path = Source/CDImage.swift; sourceTree = "<group>"; };
+		A4E213152442B92A1FDF8427F8893E51 /* CDMarkdownCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownCode.swift; path = Source/CDMarkdownCode.swift; sourceTree = "<group>"; };
+		A66B887A978F91C1523AF191E26BA12B /* CDMarkdownKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDMarkdownKit-umbrella.h"; sourceTree = "<group>"; };
+		A6AF3F892C18CDB2818F1DBE7AD69004 /* CDMarkdownList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownList.swift; path = Source/CDMarkdownList.swift; sourceTree = "<group>"; };
+		AD2CCF5145377836C2ECD7AE69054CFE /* CDMarkdownKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CDMarkdownKit-Info.plist"; sourceTree = "<group>"; };
+		AFBEE493D90897D53B88A71566B56E24 /* NSMutableAttributedString+CDMarkdownKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSMutableAttributedString+CDMarkdownKit.swift"; path = "Source/NSMutableAttributedString+CDMarkdownKit.swift"; sourceTree = "<group>"; };
+		BACDD6C14752806AEBECFF8CB532D58C /* Pods-JMMarkdownKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JMMarkdownKit-dummy.m"; sourceTree = "<group>"; };
+		C663329F9060638E5744B62510F3B5F8 /* CDMarkdownKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDMarkdownKit-prefix.pch"; sourceTree = "<group>"; };
+		C99B146B45487C36BD6CB699CD6F8139 /* JMDesignKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JMDesignKit-dummy.m"; sourceTree = "<group>"; };
+		D0719F46D4729B95A0566DAB2973E0A0 /* Pods_JMMarkdownKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JMMarkdownKit.framework; path = "Pods-JMMarkdownKit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F3FC9B0FE12B07CAFDCA4404700DAF /* NSTextCheckingResult+CDMarkdownKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextCheckingResult+CDMarkdownKit.swift"; path = "Source/NSTextCheckingResult+CDMarkdownKit.swift"; sourceTree = "<group>"; };
+		D4AF977726DDA56F8D2D2BE3E8C03A88 /* Pods-JMMarkdownKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JMMarkdownKit.modulemap"; sourceTree = "<group>"; };
+		D5B911825A01855614117949CC9E0A1D /* CDMarkdownKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDMarkdownKit-dummy.m"; sourceTree = "<group>"; };
+		E2375CEBD15161EAB515453C5FC213CC /* JMDesignKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JMDesignKit.framework; path = JMDesignKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E740E37D20E289C710FE9B1B2D3F6C /* CDMarkdownLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownLink.swift; path = Source/CDMarkdownLink.swift; sourceTree = "<group>"; };
+		EA292CC60AC40315EBC5BE54B6A3435C /* CDMarkdownTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownTextView.swift; path = Source/CDMarkdownTextView.swift; sourceTree = "<group>"; };
+		EE36BF9E608A6DEB0BC28990E49A2281 /* TypedTextAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TypedTextAttributes.h; path = TypedTextAttributes/TypedTextAttributes.h; sourceTree = "<group>"; };
+		FAE243295B32EE2E59A2F0340E230EF7 /* CDMarkdownBold.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDMarkdownBold.swift; path = Source/CDMarkdownBold.swift; sourceTree = "<group>"; };
+		FE42F12E1C00CF852E5FEBB4AF4E05AF /* Pods-JMMarkdownKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JMMarkdownKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4504C9F2DF964D707188122C7ED00997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FDD58C32D06FF90640AD63FE99688E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451AB905C7AD53B9D25BD999BB9154BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE16A7481F0D8F9F34383F001ACE4ED3 /* Foundation.framework in Frameworks */,
+				1A2FF58786BBDD2E38107C2FEE9FF9BD /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7950CBFF849CCAB0B5000E379AB3EC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE239AAA56832708EDDA0CFC4B32ED4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9200582B2719B2B701B66A1ED75AEEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DDA6A35518D6D707DDE9A161509BEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A651368EF97F3D9B9BAA0C0FD537DD81 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		324AEB8ADBB7B7B9726EC4660EE4D5D1 /* JMDesignKit */ = {
+			isa = PBXGroup;
+			children = (
+				00E07478C16F108A1DA201B158FFF02B /* CGFloatExtensions.swift */,
+				7CC3AD2430C71D598F9477D4F301D144 /* CGSizeExtensions.swift */,
+				89638CB41912D9DA56BE8DBD8929CCA6 /* JMDesignKit.h */,
+				7DA490AB2B3A78B95BF8E802575320DC /* Support Files */,
+			);
+			name = JMDesignKit;
+			path = JMDesignKit;
+			sourceTree = "<group>";
+		};
+		3674C783127D4587B387AF694B036A1B /* TypedTextAttributes */ = {
+			isa = PBXGroup;
+			children = (
+				4B7C0167EE3ED323506EED9643282E4D /* String+Util.swift */,
+				EE36BF9E608A6DEB0BC28990E49A2281 /* TypedTextAttributes.h */,
+				6B86E93298DCDC4498AFEDF2305180DC /* TypedTextAttributes.swift */,
+				8E6760C6DA47661C8C811BA646D3D0E5 /* Support Files */,
+			);
+			name = TypedTextAttributes;
+			path = TypedTextAttributes;
+			sourceTree = "<group>";
+		};
+		393659A8FAEA75C35FB55D3ED411A3AD /* Pods-JMMarkdownKit */ = {
+			isa = PBXGroup;
+			children = (
+				D4AF977726DDA56F8D2D2BE3E8C03A88 /* Pods-JMMarkdownKit.modulemap */,
+				FE42F12E1C00CF852E5FEBB4AF4E05AF /* Pods-JMMarkdownKit-acknowledgements.markdown */,
+				79B4B06C900839E07E2760F9EA53005E /* Pods-JMMarkdownKit-acknowledgements.plist */,
+				BACDD6C14752806AEBECFF8CB532D58C /* Pods-JMMarkdownKit-dummy.m */,
+				0FF6714BBB65CFA3119A0293BAA9DE6D /* Pods-JMMarkdownKit-Info.plist */,
+				7F221D1602B9D88BC59FB99C2B6505B3 /* Pods-JMMarkdownKit-umbrella.h */,
+				A4253A42618E9BF8C9FB5F9A3938AB9A /* Pods-JMMarkdownKit.debug.xcconfig */,
+				1E7F20071E3649A6DB0257D9C147C183 /* Pods-JMMarkdownKit.release.xcconfig */,
+			);
+			name = "Pods-JMMarkdownKit";
+			path = "Target Support Files/Pods-JMMarkdownKit";
+			sourceTree = "<group>";
+		};
+		3B149ECD607D80919F82C7A1AE5D8A74 /* CDMarkdownKit */ = {
+			isa = PBXGroup;
+			children = (
+				A20FA5A9DB69E902F9435E94283FA5A0 /* CDAttributedStringKey.swift */,
+				8B84F89761D68DDF82D656118D91779A /* CDColor.swift */,
+				581CA6C3A660431EF136DD7747632FB6 /* CDColor+CDMarkdownKit.swift */,
+				4A142E097F2F0BEC2226712970B5150B /* CDFont.swift */,
+				584786359E40E0B519C58EF9EE00C66D /* CDFont+CDMarkdownKit.swift */,
+				A45B8C277839A11558FD343F6BB12B98 /* CDImage.swift */,
+				287054AAA66F47B4556BE2BA78D4A894 /* CDImage+CDMarkdownKit.swift */,
+				01C14E5379261BAA2D71A2F45BCC8049 /* CDMarkdownAutomaticLink.swift */,
+				FAE243295B32EE2E59A2F0340E230EF7 /* CDMarkdownBold.swift */,
+				A4E213152442B92A1FDF8427F8893E51 /* CDMarkdownCode.swift */,
+				281A043C785C9263B4AB35A57859A932 /* CDMarkdownCodeEscaping.swift */,
+				20E7FEC2431CCAAF13753562747C7FA9 /* CDMarkdownCommonElement.swift */,
+				64601BA9EF682F2B183A0D710C14CB69 /* CDMarkdownElement.swift */,
+				1557CC97911A3A45F5C105571794E30F /* CDMarkdownEscaping.swift */,
+				1E5E3CF90BD4A2163372EF92C1F7BEB3 /* CDMarkdownHeader.swift */,
+				7078D7A49766D27A9F639E9F224754C5 /* CDMarkdownImage.swift */,
+				5D1B29DB14E88FEFA3A280C9AEDDBCC5 /* CDMarkdownItalic.swift */,
+				7FF656B1E927EA713A465BD414235465 /* CDMarkdownLabel.swift */,
+				69284A1DA5FBF53EB1998D041078A879 /* CDMarkdownLayoutManager.swift */,
+				6AC4502958D93492C2FBFC6A60787AD9 /* CDMarkdownLevelElement.swift */,
+				E9E740E37D20E289C710FE9B1B2D3F6C /* CDMarkdownLink.swift */,
+				15E53893F371DF43E4E2B1D2E7656ADB /* CDMarkdownLinkElement.swift */,
+				A6AF3F892C18CDB2818F1DBE7AD69004 /* CDMarkdownList.swift */,
+				823F0A2814A26004B80E0EF5A23D765B /* CDMarkdownParser.swift */,
+				98C759BE7785FA726D5B062A6747D91F /* CDMarkdownQuote.swift */,
+				625FA07AE86E073342A78DAD0D7AC3FF /* CDMarkdownStyle.swift */,
+				7795B05908D5DEABF6DFE87C519BFAA0 /* CDMarkdownSyntax.swift */,
+				EA292CC60AC40315EBC5BE54B6A3435C /* CDMarkdownTextView.swift */,
+				413EB277B9641649AC32191FF15BB42A /* CDMarkdownUnescaping.swift */,
+				6E2CB5F30ED1618FC27E141E9D98CE01 /* Dictionary+CDMarkdownKit.swift */,
+				72570BA06298D258CF27D560D89BAB89 /* NSAttributedString+CDMarkdownKit.swift */,
+				AFBEE493D90897D53B88A71566B56E24 /* NSMutableAttributedString+CDMarkdownKit.swift */,
+				D1F3FC9B0FE12B07CAFDCA4404700DAF /* NSTextCheckingResult+CDMarkdownKit.swift */,
+				7A5AE3CFEEEEB15FC780A2B54AF77A03 /* NSTextStorage+CDMarkdownKit.swift */,
+				67F6374A81BD0FDC168B5C0AD33D51C4 /* String+CDMarkdownKit.swift */,
+				915EB13364828CA85A8E67A82EFA82A1 /* Support Files */,
+			);
+			name = CDMarkdownKit;
+			path = CDMarkdownKit;
+			sourceTree = "<group>";
+		};
+		534DC362C017056F55B579489E0F6409 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67927A663B273700134FBA638F6F165B /* CDMarkdownKit.framework */,
+				E2375CEBD15161EAB515453C5FC213CC /* JMDesignKit.framework */,
+				D0719F46D4729B95A0566DAB2973E0A0 /* Pods_JMMarkdownKit.framework */,
+				62A1F1EDC3E7DC592F79D396A7AD546F /* TypedTextAttributes.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DA490AB2B3A78B95BF8E802575320DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91B1542E8D9391C515EC83D7B5116286 /* JMDesignKit.modulemap */,
+				C99B146B45487C36BD6CB699CD6F8139 /* JMDesignKit-dummy.m */,
+				35F555434883200D974D1224D212F9C0 /* JMDesignKit-Info.plist */,
+				242A20F9F9C0EABD713B6C4DBF437336 /* JMDesignKit-prefix.pch */,
+				7FF5DC42AF03E39DAD8CE1A30219D9C0 /* JMDesignKit-umbrella.h */,
+				50C7394A125FB6636DD120FFB20C491C /* JMDesignKit.debug.xcconfig */,
+				07D4E73BE2CBE4D3EB364B86442CF6D4 /* JMDesignKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JMDesignKit";
+			sourceTree = "<group>";
+		};
+		8E6760C6DA47661C8C811BA646D3D0E5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8123507FA85B27B4DAF8E370F60EC31F /* TypedTextAttributes.modulemap */,
+				13B65EEE3B30DF4924117DC73F3B3958 /* TypedTextAttributes-dummy.m */,
+				0DC6B3CC980C766816FB5249DF2E031A /* TypedTextAttributes-Info.plist */,
+				716643D02467614B18D3F94B518AD4F9 /* TypedTextAttributes-prefix.pch */,
+				95A6A021F443FEE45FAC091A3FAF4246 /* TypedTextAttributes-umbrella.h */,
+				3A1BD968B0049EEDE647BEB5E03BF451 /* TypedTextAttributes.debug.xcconfig */,
+				1ADAA14F117952881C8F0392B8653596 /* TypedTextAttributes.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TypedTextAttributes";
+			sourceTree = "<group>";
+		};
+		915EB13364828CA85A8E67A82EFA82A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E03E1E8C1DAFDA6186F925D45D333CD /* CDMarkdownKit.modulemap */,
+				D5B911825A01855614117949CC9E0A1D /* CDMarkdownKit-dummy.m */,
+				AD2CCF5145377836C2ECD7AE69054CFE /* CDMarkdownKit-Info.plist */,
+				C663329F9060638E5744B62510F3B5F8 /* CDMarkdownKit-prefix.pch */,
+				A66B887A978F91C1523AF191E26BA12B /* CDMarkdownKit-umbrella.h */,
+				6DF357AC917FF1C8F3693C11CAD58096 /* CDMarkdownKit.debug.xcconfig */,
+				5153CE840824841AB8235A5B437060EF /* CDMarkdownKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CDMarkdownKit";
+			sourceTree = "<group>";
+		};
+		A651368EF97F3D9B9BAA0C0FD537DD81 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				30453446C5310EA114B978294858C9A5 /* Foundation.framework */,
+				18DE96DC511BD1CE643E8E9A8CE72374 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				D6D717AFE3D9D5353CC09DD1A5A07189 /* Pods */,
+				534DC362C017056F55B579489E0F6409 /* Products */,
+				F2A1D6DCD2CEEA359C8CFFD909A6EB39 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D6D717AFE3D9D5353CC09DD1A5A07189 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B149ECD607D80919F82C7A1AE5D8A74 /* CDMarkdownKit */,
+				324AEB8ADBB7B7B9726EC4660EE4D5D1 /* JMDesignKit */,
+				3674C783127D4587B387AF694B036A1B /* TypedTextAttributes */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2A1D6DCD2CEEA359C8CFFD909A6EB39 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				393659A8FAEA75C35FB55D3ED411A3AD /* Pods-JMMarkdownKit */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		729FEDA685E20A500673B4ED332528E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D86B7607A5EFC1A247A4860D89D183F /* Pods-JMMarkdownKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82929C2DC851ECAAE8557476350D9870 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD3B8500DC1B87DB273E064DA7B0C84 /* CDMarkdownKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B99DBB7D78CE530A4AEF62271E5A121 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8C4960DF9B79775D1EBADB90C75965 /* TypedTextAttributes-umbrella.h in Headers */,
+				575B1DF0B5A69B9DE2ECA1BC1CBC4DB4 /* TypedTextAttributes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDB056ED357BE0014D0AB7D435310C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9427AF06B35A0B21AF05B46C5FE4FD0 /* JMDesignKit-umbrella.h in Headers */,
+				7F2B1A4F49B497A946FCF329E2D21205 /* JMDesignKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8C79925E52776EF02553DA13CC438FD7 /* CDMarkdownKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A11E952ED2A8A6949765BEDEB52FD1F /* Build configuration list for PBXNativeTarget "CDMarkdownKit" */;
+			buildPhases = (
+				82929C2DC851ECAAE8557476350D9870 /* Headers */,
+				27149AB7316D2D31A34FCF5F29022769 /* Sources */,
+				D9200582B2719B2B701B66A1ED75AEEE /* Frameworks */,
+				A741535DB615A24695551638A388A281 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDMarkdownKit;
+			productName = CDMarkdownKit;
+			productReference = 67927A663B273700134FBA638F6F165B /* CDMarkdownKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B0C8CCAE1E2F08889F4F1330C88DE8F6 /* JMDesignKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1AF47C4C8407541CDB8FE15C4CCFF86 /* Build configuration list for PBXNativeTarget "JMDesignKit" */;
+			buildPhases = (
+				AFDB056ED357BE0014D0AB7D435310C8 /* Headers */,
+				8CEC144BD80ACD092FA6CCB566CA1464 /* Sources */,
+				451AB905C7AD53B9D25BD999BB9154BA /* Frameworks */,
+				9EFEFD853BF50D265051DE397FED7C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMDesignKit;
+			productName = JMDesignKit;
+			productReference = E2375CEBD15161EAB515453C5FC213CC /* JMDesignKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2E70E01F503FF73C300641039658C86 /* TypedTextAttributes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18852E2EB10346EEC5283DCEFEDA2399 /* Build configuration list for PBXNativeTarget "TypedTextAttributes" */;
+			buildPhases = (
+				9B99DBB7D78CE530A4AEF62271E5A121 /* Headers */,
+				1E276A603F301942BEB94F4A4384EB5D /* Sources */,
+				4504C9F2DF964D707188122C7ED00997 /* Frameworks */,
+				9FCB4BA31AE710C9FF3FADA6B82D5069 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TypedTextAttributes;
+			productName = TypedTextAttributes;
+			productReference = 62A1F1EDC3E7DC592F79D396A7AD546F /* TypedTextAttributes.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9163BC1E9D68D285E7005DD7064CF60 /* Pods-JMMarkdownKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D55D5BDD49AEA11D15E04C16DAE26B09 /* Build configuration list for PBXNativeTarget "Pods-JMMarkdownKit" */;
+			buildPhases = (
+				729FEDA685E20A500673B4ED332528E5 /* Headers */,
+				AA301C0130504CABEF2BC29A88D01295 /* Sources */,
+				7950CBFF849CCAB0B5000E379AB3EC50 /* Frameworks */,
+				CA4F5568EFF4439275F0CD428BE6809A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E344F81D49B249543FDE3673EDCEEE79 /* PBXTargetDependency */,
+				43F44C4664CF98AEDB0BF934564BB0B3 /* PBXTargetDependency */,
+				3B4F198D1E708BBDEAC44D698EA8B1B4 /* PBXTargetDependency */,
+			);
+			name = "Pods-JMMarkdownKit";
+			productName = "Pods-JMMarkdownKit";
+			productReference = D0719F46D4729B95A0566DAB2973E0A0 /* Pods_JMMarkdownKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 534DC362C017056F55B579489E0F6409 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C79925E52776EF02553DA13CC438FD7 /* CDMarkdownKit */,
+				B0C8CCAE1E2F08889F4F1330C88DE8F6 /* JMDesignKit */,
+				D9163BC1E9D68D285E7005DD7064CF60 /* Pods-JMMarkdownKit */,
+				B2E70E01F503FF73C300641039658C86 /* TypedTextAttributes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EFEFD853BF50D265051DE397FED7C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCB4BA31AE710C9FF3FADA6B82D5069 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A741535DB615A24695551638A388A281 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4F5568EFF4439275F0CD428BE6809A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E276A603F301942BEB94F4A4384EB5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9FEF723D90B01AA534659AE6B71891 /* String+Util.swift in Sources */,
+				98CE5B7A56F35EA647D6E05DB1488137 /* TypedTextAttributes-dummy.m in Sources */,
+				6388DD6B3E6D2A390BCBDB37911897DE /* TypedTextAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27149AB7316D2D31A34FCF5F29022769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2EC0D1DCFC56DF7382DF847F342BDA /* CDAttributedStringKey.swift in Sources */,
+				4B0219AFD08FAF5ACAB997519A2A1AAA /* CDColor+CDMarkdownKit.swift in Sources */,
+				633D45339F6507AD267ADD58827CC152 /* CDColor.swift in Sources */,
+				23021E8E674F6637677F889ECD5825A4 /* CDFont+CDMarkdownKit.swift in Sources */,
+				68D56DB0EA1C1CF7129CF902C653A03E /* CDFont.swift in Sources */,
+				501BE5DCD470895A9FE575A149FB1712 /* CDImage+CDMarkdownKit.swift in Sources */,
+				B3CB22A41A218C029767B74D6A7A04B8 /* CDImage.swift in Sources */,
+				AAB2FB3C3E8D9A802BD65F04C1601336 /* CDMarkdownAutomaticLink.swift in Sources */,
+				B69EECCA8ED6A191F3CC9DFDDBDEC0FE /* CDMarkdownBold.swift in Sources */,
+				6296AB3B7F6EB5AFEA32254D3CC915CD /* CDMarkdownCode.swift in Sources */,
+				90D4BBBBBE49F4A53E5EACD15B69A483 /* CDMarkdownCodeEscaping.swift in Sources */,
+				11F769D5EF7756FFD556FE91363E35AF /* CDMarkdownCommonElement.swift in Sources */,
+				A53C7A1358A0B7A818DA548E1A2C3313 /* CDMarkdownElement.swift in Sources */,
+				266375ABE9560639B88478F66B969594 /* CDMarkdownEscaping.swift in Sources */,
+				EC8CF17C77EABAFC125DD6689484DAF8 /* CDMarkdownHeader.swift in Sources */,
+				B86476762142A5D90135CAED8152D10A /* CDMarkdownImage.swift in Sources */,
+				F54A4CFFD9C1FFA7DD4F6389E939D328 /* CDMarkdownItalic.swift in Sources */,
+				7CD58AC559640E62C69826A4DE0B0E5C /* CDMarkdownKit-dummy.m in Sources */,
+				1B903539959B735C37C50C377C3CB1A5 /* CDMarkdownLabel.swift in Sources */,
+				5CC4EB40DEE305A56239BE091BC1F2EE /* CDMarkdownLayoutManager.swift in Sources */,
+				FE6F1FB738B6FDD322E1EEA131AD9C18 /* CDMarkdownLevelElement.swift in Sources */,
+				E425708D9CDC897F8F7506700282D5E8 /* CDMarkdownLink.swift in Sources */,
+				205EC67B3B178C83638B9C8851168E45 /* CDMarkdownLinkElement.swift in Sources */,
+				1B5B16AAD4CC1903DFF4413DB281E78F /* CDMarkdownList.swift in Sources */,
+				5E817DB498E914AC2B10E518DED6CC90 /* CDMarkdownParser.swift in Sources */,
+				DF656D0D287C56BECB3A813E18A0725C /* CDMarkdownQuote.swift in Sources */,
+				7F8C944FE909BDFCA4C687DDCF3C86C4 /* CDMarkdownStyle.swift in Sources */,
+				21690F5E60F2BB5C41E8FDBACA083624 /* CDMarkdownSyntax.swift in Sources */,
+				851285C2088A4A191187125C30A44586 /* CDMarkdownTextView.swift in Sources */,
+				3AEAC42F1DB4F027913B43FB0457B6BB /* CDMarkdownUnescaping.swift in Sources */,
+				28FEA803629B45802A3B388F89AD4489 /* Dictionary+CDMarkdownKit.swift in Sources */,
+				4043AA38EDC603195C295E1B9B14E905 /* NSAttributedString+CDMarkdownKit.swift in Sources */,
+				47890F507F1F8C1E9C4EF75303EF1D78 /* NSMutableAttributedString+CDMarkdownKit.swift in Sources */,
+				9024059FA7F2608AEEDA9A45B7B1C81D /* NSTextCheckingResult+CDMarkdownKit.swift in Sources */,
+				CA9C434BD497860E499F3366F8B4A3B8 /* NSTextStorage+CDMarkdownKit.swift in Sources */,
+				DB2EA038FF6FC30C4946B6786CA5E928 /* String+CDMarkdownKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CEC144BD80ACD092FA6CCB566CA1464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E6DBC83CA3CF75904D45A41601655E /* CGFloatExtensions.swift in Sources */,
+				8288CCE3A10FAC9BA5664176A251FD24 /* CGSizeExtensions.swift in Sources */,
+				71E5DBCD87D72B2ED0E66E3AA980E483 /* JMDesignKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA301C0130504CABEF2BC29A88D01295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496F1AD644CECAD1D7E3802F38876DF8 /* Pods-JMMarkdownKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B4F198D1E708BBDEAC44D698EA8B1B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TypedTextAttributes;
+			target = B2E70E01F503FF73C300641039658C86 /* TypedTextAttributes */;
+			targetProxy = 7A55966CF9E29B21BC0B474F4A3619CA /* PBXContainerItemProxy */;
+		};
+		43F44C4664CF98AEDB0BF934564BB0B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JMDesignKit;
+			target = B0C8CCAE1E2F08889F4F1330C88DE8F6 /* JMDesignKit */;
+			targetProxy = B725D5A83531D0AE95F8EFBBC2D31BA9 /* PBXContainerItemProxy */;
+		};
+		E344F81D49B249543FDE3673EDCEEE79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CDMarkdownKit;
+			target = 8C79925E52776EF02553DA13CC438FD7 /* CDMarkdownKit */;
+			targetProxy = D82DBC1511B1C09C429CBCFC7B662472 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24308F6A9B1172979EF9AABAA750DC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A1BD968B0049EEDE647BEB5E03BF451 /* TypedTextAttributes.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TypedTextAttributes/TypedTextAttributes-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TypedTextAttributes/TypedTextAttributes-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TypedTextAttributes/TypedTextAttributes.modulemap";
+				PRODUCT_MODULE_NAME = TypedTextAttributes;
+				PRODUCT_NAME = TypedTextAttributes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47249FF0954BDEF9AD349DE3092B882F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5153CE840824841AB8235A5B437060EF /* CDMarkdownKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CDMarkdownKit/CDMarkdownKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDMarkdownKit/CDMarkdownKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CDMarkdownKit/CDMarkdownKit.modulemap";
+				PRODUCT_MODULE_NAME = CDMarkdownKit;
+				PRODUCT_NAME = CDMarkdownKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		764351333F99B1494B368A3DB84BD969 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07D4E73BE2CBE4D3EB364B86442CF6D4 /* JMDesignKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JMDesignKit/JMDesignKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JMDesignKit/JMDesignKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JMDesignKit/JMDesignKit.modulemap";
+				PRODUCT_MODULE_NAME = JMDesignKit;
+				PRODUCT_NAME = JMDesignKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F1C65A2AF007B4DE676754AB1E66B6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C7394A125FB6636DD120FFB20C491C /* JMDesignKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JMDesignKit/JMDesignKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JMDesignKit/JMDesignKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JMDesignKit/JMDesignKit.modulemap";
+				PRODUCT_MODULE_NAME = JMDesignKit;
+				PRODUCT_NAME = JMDesignKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8FE077856742854B478966AF581FF85E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4253A42618E9BF8C9FB5F9A3938AB9A /* Pods-JMMarkdownKit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JMMarkdownKit/Pods-JMMarkdownKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JMMarkdownKit/Pods-JMMarkdownKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB7D8311A3B262D49187ACEAC4C0EFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ADAA14F117952881C8F0392B8653596 /* TypedTextAttributes.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TypedTextAttributes/TypedTextAttributes-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TypedTextAttributes/TypedTextAttributes-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TypedTextAttributes/TypedTextAttributes.modulemap";
+				PRODUCT_MODULE_NAME = TypedTextAttributes;
+				PRODUCT_NAME = TypedTextAttributes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B2834F8E3C9DDCB16A98D3C71C9E1228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DF357AC917FF1C8F3693C11CAD58096 /* CDMarkdownKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CDMarkdownKit/CDMarkdownKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDMarkdownKit/CDMarkdownKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CDMarkdownKit/CDMarkdownKit.modulemap";
+				PRODUCT_MODULE_NAME = CDMarkdownKit;
+				PRODUCT_NAME = CDMarkdownKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9F43F3223B16CC894E5EB974AA7756A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7F20071E3649A6DB0257D9C147C183 /* Pods-JMMarkdownKit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JMMarkdownKit/Pods-JMMarkdownKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JMMarkdownKit/Pods-JMMarkdownKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18852E2EB10346EEC5283DCEFEDA2399 /* Build configuration list for PBXNativeTarget "TypedTextAttributes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24308F6A9B1172979EF9AABAA750DC5F /* Debug */,
+				AB7D8311A3B262D49187ACEAC4C0EFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A11E952ED2A8A6949765BEDEB52FD1F /* Build configuration list for PBXNativeTarget "CDMarkdownKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2834F8E3C9DDCB16A98D3C71C9E1228 /* Debug */,
+				47249FF0954BDEF9AD349DE3092B882F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1AF47C4C8407541CDB8FE15C4CCFF86 /* Build configuration list for PBXNativeTarget "JMDesignKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1C65A2AF007B4DE676754AB1E66B6F /* Debug */,
+				764351333F99B1494B368A3DB84BD969 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D55D5BDD49AEA11D15E04C16DAE26B09 /* Build configuration list for PBXNativeTarget "Pods-JMMarkdownKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE077856742854B478966AF581FF85E /* Debug */,
+				E9F43F3223B16CC894E5EB974AA7756A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_JMMarkdownKit {
+  umbrella header "Pods-JMMarkdownKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
