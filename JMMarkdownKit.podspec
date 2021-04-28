@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = 'JMMarkdownKit'
-    spec.version      = '1.0.0'
+    spec.version      = '1.1.0'
     spec.license      = { :type => 'MIT' }
     spec.homepage     = 'https://github.com/bronenos'
     spec.authors      = { 'Stan Potemkin' => 'potemkin@jivosite.com' }
@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   
     spec.framework    = 'SystemConfiguration'
   
-    spec.dependency     'CDMarkdownKit'
+    spec.dependency     'JFMarkdownKit'
     spec.dependency     'TypedTextAttributes'
     spec.dependency     'JMDesignKit'
   
