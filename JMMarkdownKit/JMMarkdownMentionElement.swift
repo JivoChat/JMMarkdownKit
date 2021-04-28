@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public enum JMMarkdownMentionOrigin {
     case person(String)

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public class JMMarkdownClickableElement: CDMarkdownLinkElement {
     public var font: UIFont?

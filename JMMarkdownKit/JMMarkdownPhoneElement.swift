@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownPhoneElement: JMMarkdownClickableElement {
     override public var regex: String {

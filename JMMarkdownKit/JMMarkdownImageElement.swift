@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownImageElement: CDMarkdownLinkElement {
     fileprivate static let regex = "\\[img\\]([^\\)]+?)\\[/img\\]"

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownHeaderElement: CDMarkdownElement, CDMarkdownStyle {
     fileprivate static let regex = "(\\[header\\])(.+?)\\[/header\\]"

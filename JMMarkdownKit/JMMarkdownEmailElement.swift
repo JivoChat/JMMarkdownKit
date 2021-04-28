@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownEmailElement: JMMarkdownClickableElement {
     fileprivate static let regex = "[^@\\s]+@(?:[^.\\s]+\\.){1,}\\w+"

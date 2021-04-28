@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownMdItalicsElement: CDMarkdownBold {
     fileprivate static let regex = "()(\\*)(.+?)(\\*)"

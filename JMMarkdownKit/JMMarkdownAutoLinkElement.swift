@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownAutoLinkElement: JMMarkdownClickableElement {
     override public var regex: String {

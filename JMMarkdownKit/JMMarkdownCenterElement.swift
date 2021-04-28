@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownCenterElement: CDMarkdownElement {
     fileprivate static let regex = "\\[center\\]([^\\[]+?)\\[/center\\]"

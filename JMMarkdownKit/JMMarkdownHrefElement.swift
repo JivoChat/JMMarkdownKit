@@ -4,7 +4,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownHrefElement: JMMarkdownClickableElement {
     fileprivate static let regex = "<a href=\"([^\"]+?)\">([^<]+?)</a>"

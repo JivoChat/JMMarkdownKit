@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownOverpaintElement: CDMarkdownBold {
     fileprivate static let regex = "(^|\\s*)(<mask>)(.*?)(</mask>)"

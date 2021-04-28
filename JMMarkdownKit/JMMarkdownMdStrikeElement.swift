@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownMdStrikeElement: CDMarkdownElement, CDMarkdownStyle {
     fileprivate static let regex = "(~)(.+?)(~)"

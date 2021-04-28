@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownListElement: CDMarkdownList {
     public var additionalAttributes = [NSAttributedString.Key: AnyObject]()

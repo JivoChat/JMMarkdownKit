@@ -4,7 +4,7 @@
 //
 
 import Foundation
-import CDMarkdownKit
+import JFMarkdownKit
 
 public final class JMMarkdownColorElement: CDMarkdownElement, CDMarkdownStyle {
     fileprivate static let regex = "\\[color=(\\w+)\\](.+?)\\[/color\\]"

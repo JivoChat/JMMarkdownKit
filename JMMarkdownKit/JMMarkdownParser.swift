@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import CDMarkdownKit
+import JFMarkdownKit
 import TypedTextAttributes
 
 public enum JMMarkdownParserType {
