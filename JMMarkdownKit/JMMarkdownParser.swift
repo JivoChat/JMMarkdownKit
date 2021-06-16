@@ -58,13 +58,16 @@ public final class JMMarkdownParser: CDMarkdownParser {
 
     private var additionalAttributes = TextAttributes()
     private(set) public var types = [JMMarkdownParserType]()
+    private var cachingLimit: Int?
     private var parsingMap = [(JMMarkdownParserType, () -> CDMarkdownElement)]()
+    private var parsingCache = NSCache<NSAttributedString, NSAttributedString>()
     
-    public convenience init(font: UIFont, color: UIColor, additionalAttributes: TextAttributes, types: [JMMarkdownParserType]) {
+    public convenience init(font: UIFont, color: UIColor, additionalAttributes: TextAttributes, types: [JMMarkdownParserType], cachingLimit: Int? = nil) {
         self.init(font: font, fontColor: color)
         
         self.additionalAttributes = additionalAttributes
         self.types = types
+        self.cachingLimit = cachingLimit
         
         parsingMap = [
             (.header, {[unowned self] in self.headerElement}),
@@ -94,34 +97,33 @@ public final class JMMarkdownParser: CDMarkdownParser {
     }
     
     public func parse(_ markdown: NSAttributedString, attributes: TextAttributes) -> NSAttributedString {
-        let attributedString = NSMutableAttributedString(attributedString: markdown)
-        
-        attributedString.addAttributes(
-            attributes
-                .font(font)
-                .foregroundColor(fontColor)
-                .backgroundColor(backgroundColor),
-            range: NSRange(
-                location: 0,
-                length: attributedString.length
+        if let cachedResult = parsingCache.object(forKey: markdown) {
+            return cachedResult
+        }
+        else {
+            let attributedString = NSMutableAttributedString(attributedString: markdown)
+            
+            attributedString.addAttributes(
+                attributes
+                    .font(font)
+                    .foregroundColor(fontColor)
+                    .backgroundColor(backgroundColor),
+                range: NSRange(
+                    location: 0,
+                    length: attributedString.length
+                )
             )
-        )
-        
-//        var preString = attributedString.string
-//        repeat {
+            
             customElements.forEach { element in
                 element.parse(attributedString)
             }
-//
-//            if attributedString.string == preString {
-//                break
-//            }
-//            else {
-//                preString = attributedString.string
-//            }
-//        } while (true)
-        
-        return attributedString
+
+            if let limit = cachingLimit, attributedString.string.count > limit {
+                parsingCache.setObject(attributedString, forKey: markdown, cost: attributedString.string.count)
+            }
+            
+            return attributedString
+        }
     }
     
     override public func parse(_ markdown: NSAttributedString) -> NSAttributedString {
