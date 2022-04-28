@@ -14,9 +14,16 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>The MIT License (MIT)
+			<string>--------------------------------
 
-Copyright © 2016-2020 Christopher de Haan &lt;contact@christopherdehaan.me&gt;
+This product is fork of https://github.com/chrisdhaan/CDMarkdownKit,
+which is released under MIT license: http://opensource.org/licenses/mit-license.html
+
+--------------------------------
+
+The MIT License (MIT)
+
+Copyright © 2016-2018 Christopher de Haan &lt;contact@christopherdehaan.me&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -39,7 +46,7 @@ THE SOFTWARE.
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
-			<string>CDMarkdownKit</string>
+			<string>JFMarkdownKit</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

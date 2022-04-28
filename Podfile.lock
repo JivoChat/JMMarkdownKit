@@ -1,25 +1,25 @@
 PODS:
-  - CDMarkdownKit (2.1.0)
+  - JFMarkdownKit (1.2.2)
   - JMDesignKit (1.0.0)
   - TypedTextAttributes (1.1.0)
 
 DEPENDENCIES:
-  - CDMarkdownKit
+  - JFMarkdownKit
   - JMDesignKit
   - TypedTextAttributes
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - CDMarkdownKit
     - TypedTextAttributes
-  https://github.com/JivoChat/JMSpecsRepo.git:
+  https://github.com/jivochat/JMSpecsRepo:
+    - JFMarkdownKit
     - JMDesignKit
 
 SPEC CHECKSUMS:
-  CDMarkdownKit: d5f3abd812d0bb2471e9cbbe32224b95ac41e92f
+  JFMarkdownKit: 9fbf4d7e07ddb4213f7044547497159a55ca3c73
   JMDesignKit: a2504dd6c940691b4a479b871bc2a73a707c8a93
   TypedTextAttributes: fc3a5a8c4a7a28304446f8c5e8af146d11c2163a
 
-PODFILE CHECKSUM: 58c68605f6b54bb4af679227a593ee7384ca47bc
+PODFILE CHECKSUM: 8c441991eeea4cc5e5eb13ac2369e5b048660b09
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.2
