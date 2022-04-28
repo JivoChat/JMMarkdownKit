@@ -2,7 +2,7 @@
 //  JMMarkdownKit.h
 //  JMMarkdownKit
 //
-//  Created by macbook on 22.04.2021.
+//  Created by Anton Karpushko on 22.04.2021.
 //
 
 #import <Foundation/Foundation.h>
