@@ -17,6 +17,7 @@ public enum JMMarkdownParserPurpose {
 
 public enum JMMarkdownContent {
     case caption(String)
+    case rich(NSAttributedString)
     case attachment(JMMarkdownImageAttachment)
 }
 
@@ -377,8 +378,12 @@ open class JMMarkdownLabel: UIView {
         
         for content in contents {
             switch content {
-            case .caption(let caption): string.append(adjustAttributes(parser.parse(caption)))
-            case .attachment(let attachment): string.append(NSAttributedString(attachment: attachment))
+            case .caption(let caption):
+                string.append(adjustAttributes(parser.parse(caption)))
+            case .rich(let rich):
+                string.append(rich)
+            case .attachment(let attachment):
+                string.append(NSAttributedString(attachment: attachment))
             }
         }
         
