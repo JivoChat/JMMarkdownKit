@@ -379,7 +379,9 @@ open class JMMarkdownLabel: UIView {
         for content in contents {
             switch content {
             case .caption(let caption):
-                string.append(adjustAttributes(parser.parse(caption)))
+                string.append(adjustAttributes(parser.parse(caption),
+                                               alignmentNeedsUpdating: false,
+                                               lineBreakModeNeedsUpdating: false))
             case .rich(let rich):
                 string.append(rich)
             case .attachment(let attachment):
@@ -390,7 +392,7 @@ open class JMMarkdownLabel: UIView {
         return string
     }
     
-    private func adjustAttributes(_ string: NSAttributedString) -> NSAttributedString {
+    private func adjustAttributes(_ string: NSAttributedString, alignmentNeedsUpdating: Bool = true, lineBreakModeNeedsUpdating: Bool = true) -> NSAttributedString {
         guard string.length > 0 else { return string }
         
         let style: NSMutableParagraphStyle
@@ -411,8 +413,13 @@ open class JMMarkdownLabel: UIView {
             style = NSMutableParagraphStyle()
         }
         
-        style.alignment = textAlignment
-        style.lineBreakMode = lineBreakMode
+        
+        if alignmentNeedsUpdating {
+            style.alignment = textAlignment
+        }
+        if lineBreakModeNeedsUpdating {
+            style.lineBreakMode = lineBreakMode
+        }
         
         let adjustedString = NSMutableAttributedString(attributedString: string)
         adjustedString.addAttributes(
