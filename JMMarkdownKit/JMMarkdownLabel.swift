@@ -412,7 +412,7 @@ open class JMMarkdownLabel: UIView {
         }
         
         style.alignment = textAlignment
-        style.lineBreakMode = lineBreakMode
+//        style.lineBreakMode = lineBreakMode
         
         let adjustedString = NSMutableAttributedString(attributedString: string)
         adjustedString.addAttributes(
