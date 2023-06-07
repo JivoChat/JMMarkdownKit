@@ -10,7 +10,7 @@ import Foundation
 import JFMarkdownKit
 
 public final class JMMarkdownMdItalicsElement: CDMarkdownBold {
-    fileprivate static let regex = "()(\\*)(.+?)(\\*)"
+    fileprivate static let regex = "()([*_])(.+?)(\\2)"
     
     public init() {
         super.init(font: nil, customBoldFont: nil, color: nil, backgroundColor: nil)
