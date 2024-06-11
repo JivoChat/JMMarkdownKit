@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = 'JMMarkdownKit'
-    spec.version      = '1.2.3'
+    spec.version      = '1.2.4'
     spec.license      = { :type => 'MIT' }
     spec.homepage     = 'https://github.com/bronenos'
     spec.authors      = { 'Stan Potemkin' => 'potemkin@jivosite.com' }
