@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import UIKit
 import JFMarkdownKit
 
 public final class JMMarkdownHrefElement: JMMarkdownClickableElement {
