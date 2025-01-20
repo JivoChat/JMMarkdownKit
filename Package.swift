@@ -24,7 +24,7 @@ let package = Package(
                 .product(name: "JFMarkdownKit", package: "JFMarkdownKit"),
                 .product(name: "TypedTextAttributes", package: "TypedTextAttributes"),
             ],
-            path: "."
+            path: "JMMarkdownKit"
         )
     ]
 )
