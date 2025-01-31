@@ -13,8 +13,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/FluidGroup/TypedTextAttributes.git", from: "2.0.0"),
-        .package(url: "https://github.com/JivoChat/JMDesignKit.git", .branch("master")),
-        .package(url: "https://github.com/JivoChat/JFMarkdownKit.git", .branch("master")),
+        .package(url: "https://github.com/JivoChat/JMDesignKit.git", exact: "2.0.0"),
+        .package(url: "https://github.com/JivoChat/JFMarkdownKit.git", exact: "2.0.0"),
     ],
     targets: [
         .target(

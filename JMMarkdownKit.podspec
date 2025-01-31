@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = 'JMMarkdownKit'
-    spec.version      = '1.2.4'
+    spec.version      = '2.0.0'
     spec.license      = { :type => 'MIT' }
     spec.homepage     = 'https://github.com/bronenos'
     spec.authors      = { 'Stan Potemkin' => 'potemkin@jivosite.com' }
@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   
     spec.ios.deployment_target  = '12.0'
   
-    spec.source       = { :git => 'https://github.com/JivoChat/JMMarkdownKit.git', :tag => "#{spec.version}" }
+    spec.source       = { :git => 'https://github.com/JivoChat/JMMarkdownKit.git', :tag => "v#{spec.version}" }
     spec.source_files = 'JMMarkdownKit/**/*.{h,m,swift}'
     spec.swift_version = '5.0'
   
@@ -18,5 +18,5 @@ Pod::Spec.new do |spec|
     spec.dependency     'TypedTextAttributes'
     spec.dependency     'JMDesignKit'
   
-    spec.exclude_files = 'Info.plist'
+    spec.exclude_files = 'Info.plist', 'Package.swift'
   end
