@@ -29,6 +29,7 @@ public enum JMMarkdownParserType {
     case mdBold
     case mdStrike
     case mdLink
+    case mdH3
 }
 
 struct JMMarkdownParsedValue {
@@ -44,6 +45,7 @@ public final class JMMarkdownParser: CDMarkdownParser {
     public lazy var mdBoldElement = JMMarkdownMdBoldElement()
     public lazy var mdStrikeElement = JMMarkdownMdStrikeElement()
     public lazy var mdLinkElement = JMMarkdownMdLinkElement()
+    public lazy var mdH3Element = JMMarkdownMdH3Element()
     public lazy var colorElement = JMMarkdownColorElement()
     public lazy var autoLinkElement = JMMarkdownAutoLinkElement()
     public lazy var linkElement = JMMarkdownLinkElement()
@@ -76,6 +78,7 @@ public final class JMMarkdownParser: CDMarkdownParser {
             (.mdItalics, {[unowned self] in self.mdItalicsElement}),
             (.mdStrike, {[unowned self] in self.mdStrikeElement}),
             (.mdLink, {[unowned self] in self.mdLinkElement}),
+            (.mdH3, {[unowned self] in self.mdH3Element}),
             (.color, {[unowned self] in self.colorElement}),
             (.autoLink, {[unowned self] in self.autoLinkElement}),
             (.link, {[unowned self] in self.linkElement}),
